@@ -1,0 +1,30 @@
+{
+  "name": "@warren-bank/corsproxy",
+  "description": "Node.js server that is 'corsproxy.io' API compatible.",
+  "version":     "1.0.0",
+  "scripts": {
+    "start":     "node corsproxy/bin/corsproxy.js",
+    "sudo": "sudo node corsproxy/bin/corsproxy.js"
+  },
+  "bin": {
+    "corsproxy": "corsproxy/bin/corsproxy.js"
+  },
+  "dependencies": {
+    "@warren-bank/node-process-argv": "^1.2.2",
+    "@warren-bank/node-request": "^2.0.16"
+  },
+  "license": "GPL-2.0",
+  "author": {
+    "name":   "Warren R. Bank",
+    "email":  "warren.r.bank@gmail.com",
+    "url":    "https://github.com/warren-bank"
+  },
+  "homepage": "https://github.com/warren-bank/node-CORS-Proxy",
+  "repository": {
+    "type":   "git",
+    "url":    "https://github.com/warren-bank/node-CORS-Proxy"
+  },
+  "bugs": {
+    "url":    "https://github.com/warren-bank/node-CORS-Proxy/issues"
+  }
+}
