@@ -24,6 +24,7 @@ function pipeProxyResponse(res, req, req_url_params) {
     if (!url) throw new Error('missing required parameter: url')
 
     const req_headers = !!req.headers ? {...req.headers} : {}
+    setHeaderParamValue(req_headers, 'host:')
     setHeaders(req_headers, req_url_params, 'reqHeaders')
 
     const options = [url, {
