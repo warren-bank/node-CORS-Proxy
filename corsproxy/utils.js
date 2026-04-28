@@ -32,7 +32,7 @@ function pipeProxyResponse(res, req, req_url_params) {
       headers: req_headers
     }]
     const POST_data = req // stream.Readable
-    const config    = {binary: true, stream: true}
+    const config    = {binary: true, stream: true, keepContentEncoding: true}
 
     request(options, POST_data, config)
     .then(({response}) => {
